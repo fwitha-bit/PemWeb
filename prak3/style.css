@@ -1,41 +1,43 @@
 body {
-    background: linear-gradient(rgb(186, 216, 236));
-    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(rgb(186, 216, 236)); /*mengatur  bg jd gradasi v: */
+    font-family: Arial, Helvetica, sans-serif; /*font text  v: */
 
 }
 
 p{
-    font-size: 16px;
+    font-size: 16px; /*mengatur  ukuran text di semua paragraf v: */
 }
 
 #highligtht{
-    color : rgb(19, 19, 90);
-    font-weight: bold;
-    font-family: 'Gill sans', 'Gill Sans MT';
+    color : rgb(19, 19, 90); /*mengatur color id v: */
+    font-weight: bold; /*mengatur  ubah text jd tebal v: */
+    font-family: 'Gill sans', 'Gill Sans MT'; 
     font-size: 25px;
 }
 
 /* ini untuk id*/
 
 .fancy {
-    font-style: italic;
-    color: rgb(36, 9, 66);
+    font-style: italic; /*mengatur text di class jd miring v: */
+    color: rgb(36, 9, 66); /*mengatur  warna v: */
 }
 
 
 /* ini untuk mengedit classnya*/
 
 .example {
-    font-size: larger;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: larger; /*sama aja tp di class example v: */
+    font-family: 'Times New Roman', Times, serif; 
     font-style: normal;
     color: darkblue;
 }
 
-ul.listsatu {
+/*sama aja bang kek dia atas v: */
+
+ul.listsatu { /*mengatur  list satu v: */
     color: rgb(12, 12, 41);
     font-family:'Times New Roman', Times, serif;
-    margin: 10px 5px 5px 10px;
+    margin: 10px 5px 5px 10px;          
     background-color: rgb(86, 132, 143);
     list-style-type: disc;
     list-style-position: inside;
@@ -53,14 +55,14 @@ ol.listdua {
     border-radius: 10px;
 }
 
-.section1 {
+.section1 {  /* Membuat blok/section dengan latar biru muda dan sudut membulat hehe */
     background-color: rgb(167, 167, 245);
     padding: 10px;
     border-radius: 10px;
 
 }
 
-.mark {
+.mark {  /*efek highlight pada teks. */
     background-color: rgb(60, 133, 133);
     font-style: italic;
     font-weight: bold;
@@ -68,19 +70,19 @@ ol.listdua {
     border-radius: 10px;
 }
 
-.animate-text {
+.animate-text { /*biar text nge-blik eak  */
     color: rgb(12, 12, 107);
     font-size: 60px;
     animation: pulse 2s infinite;
 }
 
-@keyframes pulse{
+@keyframes pulse{ /*ini durasi animasinya  */
     0%{opacity: 1;}
     50%{opacity: 0.5;}
     100%{opacity: 1;}
 }
 
-.btn {
+.btn { /*efek hover interaktif kalo di klik */
     display: inline-block;
     background-color: rgb(17, 7, 75);
     color: white;
@@ -90,7 +92,8 @@ ol.listdua {
     transition: 0.3s;
 }
 
-a.btn:hover {
+a.btn:hover { /*berubah warna + membesar (scale 1.1) saat hover*/
     background-color: rgb(85, 83, 121);
     transform: scale(1.1);
+
 }
