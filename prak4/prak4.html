@@ -1,64 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Praktikum-4</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css ">
+    <style>
+      body {
+        background-image: url('https://i.pinimg.com/1200x/c8/5a/2c/c85a2cf77639548a24ef09273ec883c3.jpg');
+        
+      }
+      
+    </style>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-primary mb-5">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" 
-            data-bs-toggle="collapse" data-bs-target="navbarNav">
-                <span class="navbar-toggle-icon"></span>
+            <a class="navbar-brand" href="#">
+                <img src="https://i.pinimg.com/736x/15/3a/a1/153aa164b749f2c0525ef8a988bf9be3.jpg" alt="meme" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                YDH SIH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
         </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" href="#"> Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#"> Materi </a></li>
-            <li class="nav-item"><a class="nav-link" href="#"> Kontak</a></li>
-          </ul>
-        </div> 
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
     </nav>
 
-    <div class="container p-2">
+    <!-- Hero Section -->
+    <div class="container p-2 mb-5">
         <div class="row">
             <div class="col">
                 <p>Welcome to,</p>
-                <h1>Ini anime</h1>
-                <h5>Belajar ngoding bljr husbu</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h1>TUGAS TERUS V:</h1>
+                <h5>Belajar ngoding bareng aing</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nulla nisi aliquam non autem minus
+                    tempore, accusantium beatae eius fugiat!</p>
+                <a href="£" class="btn btn-success">Contact me</a>
             </div>
-            <div class="col">
-                <img src="https://i.pinimg.com/474x/5c/f1/99/5cf199daf8d7c0b85fec8eaab04b7224.jpg" alt="gmbar" width="300">
+            <div class="col text-center">
+                <img src="https://i.pinimg.com/736x/15/3a/a1/153aa164b749f2c0525ef8a988bf9be3.jpg" alt="codec" width="300">
             </div>
         </div>
     </div>
 
-    <!--card-->
-    <div class="container p-lg-0">
-            <div class="row">
-                <img src="https://i.pinimg.com/474x/5c/f1/99/5cf199daf8d7c0b85fec8eaab04b7224.jpg" alt="gambar">
-                <div class="card-body">
-                    <h5 class="card-body">Card Title</h5>
-                    <p class="card-text">
-                        Contrary to popular belief, Lorem Ipsum is not simply random text.
-                        It has roots in a piece of classical Latin literature from 45 BC,
-                        making it over 2000 years old.
-                    </p>
-                    <a href="btn btn-danger">pencet</a>
+    <!-- 3 Card -->
+    <div class="container mb-5">
+        <div class="text-center mb-5">
+            <h1>Card</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://i.pinimg.com/736x/8e/f5/7a/8ef57af11fa9cf25891b75a6ee367133.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="£" class="btn btn-danger">Pencet</a>
+                    </div>
                 </div>
-         </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://i.pinimg.com/736x/c8/80/24/c880242addeced056045a4bfa4227332.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="£" class="btn btn-danger">Pencet</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://i.pinimg.com/736x/d2/2e/2d/d22e2d3c4d439c77183754d7f5bf8d5d.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="£" class="btn btn-danger">Pencet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!-- form -->
+    <div class="container d-flex flex-column align-items-center">
+        <div>
+            <h1 class="text-center mb-3">Contact me</h1>
+        </div>
 
+        <div class="card p-4" style="width: 22rem;">
+            <form>
+                <div class="mb-3">
+                    <label for="nama" class="form-label">nama</label>
+                    <input type="text" class="form-control" id="nama">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">email</label>
+                    <input type="text" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="noHp" class="form-label">No HP</label>
+                    <input type="text" class="form-control" id="noHp">
+                </div>
+                <div class="mb-3">
+                    <label for="pesan" class="form-label">pesan</label>
+                    <textarea class="form-control" id="pesan"></textarea>
+                </div>
 
-    <script scr="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
