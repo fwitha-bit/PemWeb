@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-200 font-sans">
+    <div class="text-center mt-10">
+        <h1 class="text-3xl text-blue-600">
+            ini js
+        </h1>
+        <p class="text-xl mt-3">
+            Javascript itu untuk logika dan interpreksi web fungsi
+        </p>
+    </div>
+
+    <hr class="my-4">
+
+    <div class="text-center mt-10">
+        <h2 class="text-2xl font-bold md-3">
+            Variabel dan konsol
+        </h2>
+        <button class="bg-green-500 text-white px-4 py-2 rounded" 
+        onclick="contohVariable()">klik</button>
+    </div>
+
+    <script>
+        function contohVariable(){
+            let nama = "aku";
+            const umur = 21;
+            var aktif = true;
+            alert(`Nama: ${nama}\nUmur\n:${umur}\nAktif:${aktif}`);
+            console.log(nama, umur, aktif);
+        }
+    </script>
+
+    <!-- Percabangan -->
+    <div class="text-center mt-10">
+        <h2 class="txt-2xl font-bold mb-3">
+            Percabangan
+        </h2>
+        <button class="bg-black-500 text-blue ps-4 py-2 rounded" onclick="cekNilai()">
+            Cek Nilai
+        </button>
+    </div>
+
+    <script>
+        function cekNilai(){
+            const nilai=prompt("Masukan Nilai Kamu:");
+            if(nilai > 75) alert("Anjay lulus");
+            else alert("Bro is cooked");
+        }
+    </script>
+
+    <!-- Array -->
+    <div class="text-center mt-10">
+        <h2 class="text-2xl font-bold md-3">
+            Array
+        </h2>
+        <button class="bg-indigo-500 text-white px-4 py-2 rounded"
+        onclick="tampilArray()">
+            Ini Array
+        </button>
+    </div>
+
+    <script>
+        function tampilArray(){
+            const buah = ["Apel", "Jeruk", "mangga", "Pisang"];
+            alert("Daftar buah:\n" + buah.join(", "));
+            console.log(buah);
+        }    
+    </script>
+
+    <!-- Fungsi -->
+    <div class="text-center mt-10"> 
+        <h2 class="text-2xl font-blod mb-3">
+            Fungssi
+        </h2>
+        <button class="bg-indigo-500 text-whitepx-4 py-2 rounded"
+        onclick="hitungTambah()">
+            Penjumplahan
+        </button>
+    </div>
+
+    <script>
+        function hitungTambah(){
+            const a = parseInt(prompt("Masukan nilai pertama: "));
+            const b = parseInt(prompt("Masukan nilai kedua: "));
+            const hasil = a + b;
+            alert(`Hasilnya: ${hasil}`);
+        }    
+    </script>
+
+    <div class="text-center mt-10">
+        <h2 class="text-2xl font-bold mb-3"> Animasi Sederhana</h2>
+        <div id="kotak" class="w-20 h-20 bg-indigo-500 rounded transition-all duration-700 mx-auto"></div>
+        <button id="gerak" class="mt-3 bg-green-500 text-while px-4 py-2 rounded"> Gerakan </button>    
+    </div>
+
+    <script>
+        const bos = document.getElementById("kotak");
+        const btn = document.getElementById("gerak");
+        btn.addEventListener("click", () => {
+            box.classList.toggle("translate-x-40");
+            box.classList.toggle("bg-pink-500");
+        });
+    </script>
+
+    <div class="text-center mt-10">
+        <h2 class="text-2xl font-bold md-3">Counter App</h2>
+        <p id="count" class="text-4xl my-4 font-momo">0</p>
+        <button id="plus" class="bg-green-500 text-white px-4 py-2 rounded">+</button> 
+        <button id="minus" class="bg-red-500 text-white px-4 py-2 rounded">-</button>   
+    </div>
+    
+    <script>
+        let count = 0;
+        const tampil = document.getElementById("count");
+        document.getElementById("plus").onclick = () => tampil.innerText = ++count;
+        document.getElementById("minus").onclick = () => tampil.innerText = --count;    
+    </script>
+
+</body>
+</html>
