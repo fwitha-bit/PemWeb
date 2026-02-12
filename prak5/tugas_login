@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum-4</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/1200x/c8/5a/2c/c85a2cf77639548a24ef09273ec883c3.jpg');
+            background-size: cover;
+            /* Tambahkan properti ini agar teks mudah dibaca di atas gambar latar */
+            color: #333; 
+        }
+        /* Style untuk card agar terlihat lebih kontras */
+        .card {
+            background-color: rgba(255, 255, 255, 0.95); /* Sedikit transparan */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container d-flex flex-column align-items-center">
+        <div>
+            <h1 class="text-center mb-3 text-white mt-5">Contact me</h1> 
+        </div>
+
+        <div class="card p-4" style="width: 22rem;">
+            <form id="contactForm" onsubmit="return validateForm()"> 
+                <div class="mb-3">
+                    <label for="nama" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="nama" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label> 
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            // Ambil nilai dari input. Saya menggunakan 'password' karena lebih sesuai.
+            const nama = document.getElementById('nama').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value; 
+
+            let isValid = true; // Bendera untuk melacak apakah semua valid
+
+            // 1. Validasi Input Tidak Boleh Kosong (Nama, Email, Password)
+            // Meskipun ada atribut 'required' di HTML, validasi JS tetap penting.
+            if (nama === '' || email === '' || password === '') {
+                alert('Semua kolom (Nama, Email, Password) harus diisi.');
+                isValid = false;
+            }
+
+            // 2. Validasi Panjang Password (Minimal 8 Karakter)
+            if (password.length > 0 && password.length < 8) {
+                alert('Password harus memiliki minimal 8 karakter.');
+                isValid = false;
+            }
+
+            // 3. Validasi Format Email
+            // Regex sederhana untuk memastikan format email standar.
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email.length > 0 && !emailRegex.test(email)) {
+                alert('Format email tidak valid (contoh: user@domain.com).');
+                isValid = false;
+            }
+            
+            // Jika validasi gagal, kembalikan 'false' untuk mencegah pengiriman form.
+            if (!isValid) {
+                return false; 
+            }
+
+            // Jika semua validasi berhasil
+            alert('Formulir berhasil divalidasi dan siap dikirim!');
+            // return true akan mengirimkan form (jika ada action URL yang ditentukan)
+            return true; 
+        }
+    </script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
